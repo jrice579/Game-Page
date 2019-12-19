@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>The Game Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="center">The Game Page</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Game Page</a>
+            </div>
+        
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="flips.html">History</a></li>
+                    <li><a href="pc.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <br>
+                    <h4>This is a game of rock, paper, scissors. You pick either rock, paper, or scissors and the computer will aswell. Rock beats scissors, scissors beats paper, and paper beats rock. Type in your choice in the box below.</h4>
+                    <label>input(rock, paper, or scissors): </label>
+                    <input type="text" id="input">
+                    <br>
+                    <button onclick="rps()" class="btn btn-primary btn-large">Click here to play</button>
+                    <p id="userOutput"></p>
+                    <p id="computerOutput"></p>
+                    <p id="rpsOutput"></p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Dice Game</h3>
+                    <br>
+                    <h4>This is a game of dice. Press the button to roll the dice. You win if the first roll is a natural (7, 11) and lose if it is craps (2, 3, 12). If a point is rolled (4, 5, 6, 8, 9, 10) it must be repeated before a 7 is thrown in order to win. If 7 is rolled before the point you lose.</h4>
+                    <button onclick="dice()" type="button" class="btn btn-primary btn-large">Roll<p id='diceOutput'></p></button>
+                </div>
+            </div>
+        </div>
+        <script src='dice.js'></script>
+        <script src='rps.js'></script>
+    </body>
+</html>
