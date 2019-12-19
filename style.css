@@ -1,0 +1,16 @@
+.center {
+    text-align:center;
+}
+.jumbotron {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KOj404TmBOv9mXqG0XUaFEJQO3wvjgz-AjAq51Zql-WRvMG6&s");
+    background-size: auto 100%;
+}
+.jumbotron > h1 {
+    color:white;
+}
+.marg {
+    margin:5px;
+}
+body {
+    background-color:rgb(63, 184, 217);
+}
